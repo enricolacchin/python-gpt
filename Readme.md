@@ -1,4 +1,4 @@
-# PYTHON-GPT - YOUR PERSONAL ASSISTANT
+# PYTHON-GPT | YOUR PERSONAL ASSISTANT
 
 :robot:	Chatbot Article: [link](https://enricolacchin.com/chatgpt-python/)
 
