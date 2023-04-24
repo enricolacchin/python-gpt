@@ -1,6 +1,7 @@
 # PYTHON-GPT - YOUR PERSONAL ASSISTANT
 
 Chatbot Article [https://enricolacchin.com/chatgpt-python/]
+
 Voice Assistant Article [https://enricolacchin.com/voice-assistant-python/] 
 
 ## How to get an API Key
