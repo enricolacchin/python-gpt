@@ -2,7 +2,7 @@
 
 :robot:	Chatbot Article: [link](https://enricolacchin.com/chatgpt-python/)
 
-:speaking_head: Voice Assistant Article: [link](https://enricolacchin.com/voice-assistant-python/)
+:speaking_head: Voice Assistant Article: coming soon...
 
 ## How to get an API Key
 1. Go on [platform.openai.com](https://platform.openai.com/)
