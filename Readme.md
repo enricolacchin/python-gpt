@@ -1,11 +1,11 @@
 # PYTHON-GPT - YOUR PERSONAL ASSISTANT
 
-:robot:	Chatbot Article [https://enricolacchin.com/chatgpt-python/]
+:robot:	Chatbot Article: [link](https://enricolacchin.com/chatgpt-python/)
 
-:speaking_head: Voice Assistant Article [https://enricolacchin.com/voice-assistant-python/] 
+:speaking_head: Voice Assistant Article: [link](https://enricolacchin.com/voice-assistant-python/)
 
 ## How to get an API Key
-1. Go on [https://platform.openai.com/]
+1. Go on [platform.openai.com](https://platform.openai.com/)
 2. Log-in
 3. Navigate to [this](https://platform.openai.com/account/api-keys) url
 4. Create a new API Key
