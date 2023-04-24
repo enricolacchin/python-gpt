@@ -9,7 +9,7 @@
 2. Log-in
 3. Navigate to [this](https://platform.openai.com/account/api-keys) url
 4. Create a new API Key
-5. Paste you API Key in the [secrets.json][./secrets_nokey.json] file
+5. Paste you API Key in the [secrets.json](./secrets_nokey.json) file
 
 ## :robot: Chatbot
 ### Requirements
