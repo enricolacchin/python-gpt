@@ -1,8 +1,8 @@
 # PYTHON-GPT - YOUR PERSONAL ASSISTANT
 
-Chatbot Article [https://enricolacchin.com/chatgpt-python/]
+:robot:	Chatbot Article [https://enricolacchin.com/chatgpt-python/]
 
-Voice Assistant Article [https://enricolacchin.com/voice-assistant-python/] 
+:speaking_head: Voice Assistant Article [https://enricolacchin.com/voice-assistant-python/] 
 
 ## How to get an API Key
 1. Go on [https://platform.openai.com/]
@@ -11,7 +11,7 @@ Voice Assistant Article [https://enricolacchin.com/voice-assistant-python/]
 4. Create a new API Key
 5. Paste you API Key in the [secrets.json][./secrets_nokey.json] file
 
-## Chatbot
+## :robot: Chatbot
 ### Requirements
 * Import openai libraries
 
@@ -23,7 +23,7 @@ pip install openai
 * Easy command line interface.
 * Text generation using OpenAI's GPT-3.5 language model.
 
-## Usage
+### Usage
 To run the script, just execute the following command:
 
 ```
@@ -32,7 +32,7 @@ python assistant.py
 
 You will be prompted to write a text and the assistant will respond with a written answer
 
-## Voice Assistant
+## 	:speaking_head: Voice Assistant
 ### Requirements
 * Python 3.6 or later
 * Import openai, pyttsx3 and SpeechRecognition libraries 
