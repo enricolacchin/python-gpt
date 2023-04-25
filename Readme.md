@@ -27,7 +27,7 @@ pip install openai
 To run the script, just execute the following command:
 
 ```
-python puthon-gpt.py
+python python-gpt.py
 ```
 
 You will be prompted to write a text and the assistant will respond with a written answer
