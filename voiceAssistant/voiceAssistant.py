@@ -12,7 +12,7 @@ with open(sys.path[0] + '/../secrets.json') as f: # I used this function because
 
 openai.api_key = api_key
 
-#Function that accepts audio by microphone and convert into text
+# Function that accepts audio by microphone and convert into text
 def listen():
     
     error = 0
