@@ -1,36 +1,38 @@
 import json
-import openai
+from pathlib import Path
 
-# Import API KEY 
-with open("secrets.json") as f:
+from openai import OpenAI
+
+# Import API KEY (secrets.json sits next to this script)
+with open(Path(__file__).resolve().parent / "secrets.json") as f:
     secrets = json.load(f)
-    api_key = secrets["api_key"]
 
-openai.api_key = api_key
+client = OpenAI(api_key=secrets["api_key"])
+MODEL = secrets.get("model", "gpt-4o-mini")
 
-# Funtion to get the response
-def get_response(messages:list):
-    response = openai.ChatCompletion.create(
-        model = "gpt-3.5-turbo",
+# Function to get the response
+def get_response(messages: list) -> str:
+    response = client.chat.completions.create(
+        model=MODEL,
         messages=messages,
-        temperature = 1.0 
+        temperature=1.0,
     )
-    return response.choices[0].message
+    return response.choices[0].message.content
 
 
 if __name__ == "__main__":
     messages = [
         {"role": "system", "content": "You are a virtual assistant called Rachel and you speak Italian and English."}
     ]
+    username = "Enry"
     try:
         while True:
-            username = "Enry" 
             user_input = input("\n" + username + ": ")
             messages.append({"role": "user", "content": user_input})
-            new_message = get_response(messages=messages)
-            print(f"Rachel: {new_message['content']}")
-            messages.append(new_message)
-            
+            answer = get_response(messages=messages)
+            print(f"Rachel: {answer}")
+            messages.append({"role": "assistant", "content": answer})
+
     # Closing phrase, when the session will close the terminal show this sentence
-    except KeyboardInterrupt:
-        print("\nBye " + username + " see you next time!") 
+    except (KeyboardInterrupt, EOFError):
+        print("\nBye " + username + " see you next time!")
